@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Stop Game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./Assests/bg.jpg);
+            background-size: cover;
+        background-repeat: no-repeat
+        }
+        input{
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #FFF; text-decoration: underline;">Quick Stop Game</h1> 
+    <ul style="color: white; font-size: x-large;">
+        <li>1.You have to click  before 1000</li>
+        <li>2.If number matches your number then you will win.</li>
+        <li>3.If it doesnt match then you are loss.</li>
+    </ul>
+    <h1 style="color: white; font-size: 50px;" id="number">00</h1>
+    <div>
+        <input placeholder="Enter A Number to Win" id="user_input" />
+    </div>
+    <h3 style="color: #FFF;" id="result">-</h4>
+   <span>
+
+       <button style=" text-decoration: NONE; COLOR: #FFF; BACKGROUND: #8abe56; padding: 13px 24px; border-radius: 40px; border: 2px solid #fff; cursor: pointer;" id="start_btn" onclick="start()">start</button>
+       <button style="text-decoration: NONE; COLOR: #FFF; BACKGROUND: #8abe56; padding: 13px 24px; border-radius: 40px; border: 2px solid #fff; cursor: pointer;" onclick="stop()">stop</button>
+   </span>
+    <script src="app.js"></script>
+</body>
+</html>
